@@ -25,6 +25,9 @@ function validarForm(){
         alert("Rut debe ser valido para postular");
         validado = false;
     }
+    if (validado){
+        alert("Registro Exitoso!");
+    }
 }
 function rutValidado(r){
     // {rut sin dv, dv}
