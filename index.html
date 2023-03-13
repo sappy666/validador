@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Beneficios Estatales</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="./index.html">
+                    <img class="nav__img" src="./img/og_chatiende.png">
+                </a>
+            </div>
+    </header>
+
+    <!-- Encabezado de la pagina -->
+    <main>
+        <section class="section">
+            <h2 class="section__title">Formulario Beneficios Estatales</h2>
+
+    <!-- Bloque Contenido -->
+            <div class="form">
+                <form action="POST" action="index.js"> <!--bloque form -->
+                    <div class="form__group">
+                        <label for="monto-dolares" class="form__label">Nombre</label> <!--elemento -->
+                        <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Tu nombre">
+                    </div>
+                    <div class="form__group">
+                        <label for="monto-dolares" class="form__label">Rut</label> <!--elemento -->
+                        <input type="text" id="rut" name="rut" class="form__input" placeholder="Tu Rut">
+                    </div>
+                    <div class="form__group">
+                        <label for="monto-dolares" class="form__label">Fecha de nacimiento</label> <!--elemento -->
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form__input" placeholder="DD/MM/AA">
+                    </div>
+                    <div class="form__group">
+                        <label for="monto-dolares" class="form__label">Ahorro</label> <!--elemento -->
+                        <input type="number" id="ahorro" name="ahorro" class="form__input" placeholder="Ahorro en uf">
+                    </div>
+                    <div class="form__group">
+                        <label for="monto-dolares" class="form__label">Rango de vulnerabilidad</label> <!--elemento -->
+                        <input type="number" min="0" max="100" id="rango-rsh" name="rango-rsh" class="form__input" placeholder="Tu porcentaje de R.S.H">
+                    </div>
+                    <input type="button" value="Enviar" class="form__button" name="submit" id="btn-enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+
+    <!-- PIE DE PÁGINA-->
+    <footer>
+        <div class="footer">
+            <img class="footer__icon" src="./img/og_chatiende.png" alt="">
+            <div class="">
+                <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!--FIN PIE DE PÁGINA-->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
